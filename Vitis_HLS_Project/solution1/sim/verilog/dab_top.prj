@@ -1,0 +1,10 @@
+sv work "glbl.v"
+sv xil_defaultlib "dab_top.v"
+sv xil_defaultlib "dab_top_mul_49s_37ns_84_5_1.v"
+sv xil_defaultlib "dab_top_mul_111s_65ns_175_5_1.v"
+sv xil_defaultlib "dab_top.autotb.v"
+sv xil_defaultlib "dab_top_mul_105s_69ns_172_5_1.v"
+sv xil_defaultlib "dab_top_mul_111s_67ns_177_5_1.v"
+sv xil_defaultlib "dab_top_mul_65s_48ns_111_5_1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

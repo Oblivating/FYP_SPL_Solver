@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../spl_prj.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../spl_prj.gen/sources_1/bd/design_1/ipshared/aed8/hdl" --include "/home/dvd/Vivado/2023.1/data/xilinx_vip/include" \
+"../../../../spl_prj.srcs/sources_1/imports/src/solver_engine.v" \
+"../../../../../../src/dab_solver_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

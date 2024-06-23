@@ -1,0 +1,144 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "2 9 1 6 3",
+    "file": "dab.cpp",
+    "fileloc": 104,
+    "instructions": 38,
+    "loads": {
+      "G": 1,
+      "L": 3
+    },
+    "name": "dab_top",
+    "stores": {
+      "G": 1,
+      "L": 2,
+      "T": 3
+    },
+    "total_instructions": 775
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 42,
+    "instructions": 3,
+    "loads": {
+      "G": 1
+    },
+    "name": "getxL",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 40,
+    "instructions": 5,
+    "loads": {
+      "L": 2
+    },
+    "name": "set_pwm",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 5
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 44,
+    "instructions": 3,
+    "loads": {
+      "G": 1
+    },
+    "name": "getxC2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "5": {
+    "basicblocks": 224,
+    "calls": "7 7 7 7 7 7 7 7 7 7",
+    "file": "dab.cpp",
+    "fileloc": 51,
+    "instructions": 437,
+    "loads": {
+      "G": 20,
+      "L": 24
+    },
+    "name": "update_state1",
+    "stores": {
+      "G": 4,
+      "L": 2
+    },
+    "total_instructions": 477
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 43,
+    "instructions": 3,
+    "loads": {
+      "G": 1
+    },
+    "name": "getxC1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "8": {
+    "basicblocks": 117,
+    "calls": "7 7 7 7",
+    "file": "dab.cpp",
+    "fileloc": 81,
+    "instructions": 222,
+    "loads": {
+      "G": 14,
+      "L": 6
+    },
+    "name": "update_state2",
+    "stores": {
+      "G": 3,
+      "L": 2
+    },
+    "total_instructions": 238
+  },
+  "9": {
+    "basicblocks": 4,
+    "calls": "5 8",
+    "file": "dab.cpp",
+    "fileloc": 95,
+    "instructions": 8,
+    "loads": {
+      "G": 1
+    },
+    "name": "go_next_state",
+    "total_instructions": 723
+  }
+}

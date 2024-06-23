@@ -1,0 +1,242 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "10 9 6 8 13 11",
+    "file": "dab.cpp",
+    "fileloc": 104,
+    "instructions": 37,
+    "loads": {
+      "G": 1,
+      "L": 3
+    },
+    "name": "dab_top",
+    "stores": {
+      "G": 1,
+      "L": 2,
+      "T": 3
+    },
+    "total_instructions": 7468
+  },
+  "1": {
+    "basicblocks": 26,
+    "calls": "7 7 7 7 7 7 7 7 7 7",
+    "file": "dab.cpp",
+    "fileloc": 51,
+    "instructions": 308,
+    "loads": {
+      "L": 10
+    },
+    "name": "update_state1",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 4552
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 37,
+    "instructions": 25,
+    "name": "DabSolver",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 493
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 44,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "getxC2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 7,
+    "instructions": 2,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 64
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 43,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "getxC1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 8,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 64
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 16,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.5",
+    "total_instructions": 64
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "12 14 5 4 2 15 17 18 20",
+    "file": "dab.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 10,
+    "name": "",
+    "total_instructions": 1618
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 17,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.6",
+    "total_instructions": 408
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 19,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.7",
+    "total_instructions": 408
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "7 7 7 7",
+    "file": "dab.cpp",
+    "fileloc": 81,
+    "instructions": 141,
+    "loads": {
+      "L": 6
+    },
+    "name": "update_state2",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 2343
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 15,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.4",
+    "total_instructions": 64
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 20,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.8",
+    "total_instructions": 408
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.3",
+    "total_instructions": 64
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 11,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.2",
+    "total_instructions": 64
+  },
+  "6": {
+    "basicblocks": 4,
+    "calls": "1 19",
+    "file": "dab.cpp",
+    "fileloc": 95,
+    "instructions": 9,
+    "loads": {
+      "L": 1
+    },
+    "name": "go_next_state",
+    "total_instructions": 6904
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 42,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "getxL",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dab.cpp",
+    "fileloc": 40,
+    "instructions": 15,
+    "loads": {
+      "L": 2
+    },
+    "name": "set_pwm",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 22
+  }
+}

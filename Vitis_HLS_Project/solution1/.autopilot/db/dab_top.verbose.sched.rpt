@@ -1,0 +1,456 @@
+
+
+================================================================
+== Vitis HLS Report for 'dab_top'
+================================================================
+* Date:           Sun Jun 23 11:38:43 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        dab_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.994 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       14|       14|  0.140 us|  0.140 us|   15|   15|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 28
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 16 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 15 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.66>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%spectopmodule_ln104 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [src/HLS/dab.cpp:104]   --->   Operation 29 'spectopmodule' 'spectopmodule_ln104' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s1"   --->   Operation 30 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s2"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %out_xL"   --->   Operation 34 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_xL, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %out_xC1"   --->   Operation 36 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_xC1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %out_xC2"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_xC2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%s2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %s2" [src/HLS/dab.cpp:104]   --->   Operation 40 'read' 's2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%s1_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %s1" [src/HLS/dab.cpp:104]   --->   Operation 41 'read' 's1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%solver_state_load = load i1 %solver_state"   --->   Operation 42 'load' 'solver_state_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%solver_vE_0_load = load i63 %solver_vE_0" [src/HLS/dab.cpp:55->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 43 'load' 'solver_vE_0_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%solver_vE_1_load = load i63 %solver_vE_1" [src/HLS/dab.cpp:55->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 44 'load' 'solver_vE_1_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%solver_xL_load = load i49 %solver_xL" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 45 'load' 'solver_xL_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%solver_xC1_load = load i64 %solver_xC1" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 46 'load' 'solver_xC1_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%solver_xC2_load = load i64 %solver_xC2" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 47 'load' 'solver_xC2_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln96 = br i1 %solver_state_load, void %if.then.i_ifconv, void %if.else.i" [src/HLS/dab.cpp:96->src/HLS/dab.cpp:107]   --->   Operation 48 'br' 'br_ln96' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (3.49ns)   --->   "%add_ln55 = add i63 %solver_vE_1_load, i63 %solver_vE_0_load" [src/HLS/dab.cpp:55->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 49 'add' 'add_ln55' <Predicate = (!solver_state_load)> <Delay = 3.49> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.49> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%sext_ln64 = sext i49 %solver_xL_load" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 50 'sext' 'sext_ln64' <Predicate = (!solver_state_load)> <Delay = 0.00>
+ST_1 : Operation 51 [5/5] (5.66ns)   --->   "%mul_ln64 = mul i84 %sext_ln64, i84 43980465108" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 51 'mul' 'mul_ln64' <Predicate = (!solver_state_load)> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%sext_ln83 = sext i64 %solver_xC1_load" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 52 'sext' 'sext_ln83' <Predicate = (solver_state_load)> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (3.52ns)   --->   "%sub_ln83 = sub i65 659706976665600, i65 %sext_ln83" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 53 'sub' 'sub_ln83' <Predicate = (solver_state_load)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%sext_ln84 = sext i64 %solver_xC2_load" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 54 'sext' 'sext_ln84' <Predicate = (solver_state_load)> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (3.52ns)   --->   "%sub_ln84 = sub i65 439804651110400, i65 %sext_ln84" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 55 'sub' 'sub_ln84' <Predicate = (solver_state_load)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.32>
+ST_2 : Operation 56 [1/1] (0.00ns) (grouped into LUT with out node select_ln58_1)   --->   "%xor_ln54 = xor i1 %s2_read, i1 1" [src/HLS/dab.cpp:54->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 56 'xor' 'xor_ln54' <Predicate = (!s2_read)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 57 [1/1] (0.00ns) (grouped into LUT with out node select_ln58_1)   --->   "%and_ln54 = and i1 %s1_read, i1 %xor_ln54" [src/HLS/dab.cpp:54->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 57 'and' 'and_ln54' <Predicate = (!s2_read)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 58 [1/1] (3.49ns)   --->   "%sub_ln57 = sub i63 0, i63 %add_ln55" [src/HLS/dab.cpp:57->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 58 'sub' 'sub_ln57' <Predicate = (s2_read)> <Delay = 3.49> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.49> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 59 [1/1] (3.49ns)   --->   "%sub_ln59 = sub i63 %solver_vE_1_load, i63 %solver_vE_0_load" [src/HLS/dab.cpp:59->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 59 'sub' 'sub_ln59' <Predicate = (s2_read)> <Delay = 3.49> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.49> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 60 [1/1] (3.49ns)   --->   "%sub_ln61 = sub i63 %solver_vE_0_load, i63 %solver_vE_1_load" [src/HLS/dab.cpp:61->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 60 'sub' 'sub_ln61' <Predicate = (!s2_read)> <Delay = 3.49> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.49> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node shl_ln2)   --->   "%and_ln58 = and i1 %s2_read, i1 %s1_read" [src/HLS/dab.cpp:58->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 61 'and' 'and_ln58' <Predicate = (s2_read)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node shl_ln2)   --->   "%select_ln58 = select i1 %and_ln58, i63 %sub_ln59, i63 %sub_ln57" [src/HLS/dab.cpp:58->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 62 'select' 'select_ln58' <Predicate = (s2_read)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 63 [1/1] (1.41ns) (out node of the LUT)   --->   "%select_ln58_1 = select i1 %and_ln54, i63 %add_ln55, i63 %sub_ln61" [src/HLS/dab.cpp:58->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 63 'select' 'select_ln58_1' <Predicate = (!s2_read)> <Delay = 1.41> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node shl_ln2)   --->   "%select_ln58_2 = select i1 %s2_read, i63 %select_ln58, i63 %select_ln58_1" [src/HLS/dab.cpp:58->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 64 'select' 'select_ln58_2' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 65 [4/5] (5.66ns)   --->   "%mul_ln64 = mul i84 %sext_ln64, i84 43980465108" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 65 'mul' 'mul_ln64' <Predicate = true> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 66 [1/1] (1.41ns) (out node of the LUT)   --->   "%shl_ln2 = bitconcatenate i104 @_ssdm_op_BitConcatenate.i104.i63.i41, i63 %select_ln58_2, i41 0" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 66 'bitconcatenate' 'shl_ln2' <Predicate = true> <Delay = 1.41>
+
+State 3 <SV = 2> <Delay = 5.66>
+ST_3 : Operation 67 [3/5] (5.66ns)   --->   "%mul_ln64 = mul i84 %sext_ln64, i84 43980465108" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 67 'mul' 'mul_ln64' <Predicate = true> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 5.66>
+ST_4 : Operation 68 [2/5] (5.66ns)   --->   "%mul_ln64 = mul i84 %sext_ln64, i84 43980465108" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 68 'mul' 'mul_ln64' <Predicate = true> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.66>
+ST_5 : Operation 69 [1/5] (5.66ns)   --->   "%mul_ln64 = mul i84 %sext_ln64, i84 43980465108" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 69 'mul' 'mul_ln64' <Predicate = true> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 4.66>
+ST_6 : Operation 70 [1/1] (0.00ns) (grouped into LUT with out node add_ln64)   --->   "%sext_ln64_1 = sext i104 %shl_ln2" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 70 'sext' 'sext_ln64_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 71 [1/1] (0.00ns) (grouped into LUT with out node add_ln64)   --->   "%sext_ln64_2 = sext i84 %mul_ln64" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 71 'sext' 'sext_ln64_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 72 [1/1] (4.66ns) (out node of the LUT)   --->   "%add_ln64 = add i105 %sext_ln64_1, i105 %sext_ln64_2" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 72 'add' 'add_ln64' <Predicate = true> <Delay = 4.66> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 4.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.97>
+ST_7 : Operation 73 [1/1] (0.00ns)   --->   "%sext_ln64_3 = sext i105 %add_ln64" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 73 'sext' 'sext_ln64_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 74 [5/5] (6.97ns)   --->   "%mul_ln64_1 = mul i172 %sext_ln64_3, i172 287836439145480081300" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 74 'mul' 'mul_ln64_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.97>
+ST_8 : Operation 75 [4/5] (6.97ns)   --->   "%mul_ln64_1 = mul i172 %sext_ln64_3, i172 287836439145480081300" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 75 'mul' 'mul_ln64_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 6.97>
+ST_9 : Operation 76 [3/5] (6.97ns)   --->   "%mul_ln64_1 = mul i172 %sext_ln64_3, i172 287836439145480081300" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 76 'mul' 'mul_ln64_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 6.97>
+ST_10 : Operation 77 [2/5] (6.97ns)   --->   "%mul_ln64_1 = mul i172 %sext_ln64_3, i172 287836439145480081300" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 77 'mul' 'mul_ln64_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.97>
+ST_11 : Operation 78 [1/5] (6.97ns)   --->   "%mul_ln64_1 = mul i172 %sext_ln64_3, i172 287836439145480081300" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 78 'mul' 'mul_ln64_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 6.64>
+ST_12 : Operation 79 [1/1] (0.00ns)   --->   "%shl_ln64_1 = bitconcatenate i169 @_ssdm_op_BitConcatenate.i169.i49.i120, i49 %solver_xL_load, i120 0" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 79 'bitconcatenate' 'shl_ln64_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 80 [1/1] (0.00ns)   --->   "%sext_ln64_4 = sext i169 %shl_ln64_1" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 80 'sext' 'sext_ln64_4' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 81 [1/1] (0.00ns)   --->   "%sext_ln64_5 = sext i172 %mul_ln64_1" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 81 'sext' 'sext_ln64_5' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 82 [1/1] (6.64ns)   --->   "%add_ln64_1 = add i173 %sext_ln64_4, i173 %sext_ln64_5" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 82 'add' 'add_ln64_1' <Predicate = true> <Delay = 6.64> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 6.64> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 83 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i53 @_ssdm_op_PartSelect.i53.i173.i32.i32, i173 %add_ln64_1, i32 120, i32 172" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 83 'partselect' 'trunc_ln3' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 3.23>
+ST_13 : Operation 84 [1/1] (3.23ns)   --->   "%icmp_ln66 = icmp_slt  i53 %trunc_ln3, i53 8842272510574592" [src/HLS/dab.cpp:66->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 84 'icmp' 'icmp_ln66' <Predicate = true> <Delay = 3.23> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 3.23> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 5.15>
+ST_14 : Operation 85 [1/1] (0.95ns)   --->   "%select_ln66 = select i1 %icmp_ln66, i53 8842272510574592, i53 %trunc_ln3" [src/HLS/dab.cpp:66->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 85 'select' 'select_ln66' <Predicate = true> <Delay = 0.95> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 86 [1/1] (0.00ns)   --->   "%trunc_ln69 = trunc i53 %select_ln66" [src/HLS/dab.cpp:69->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 86 'trunc' 'trunc_ln69' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 87 [1/1] (3.23ns)   --->   "%icmp_ln69 = icmp_sgt  i53 %select_ln66, i53 120946279055360" [src/HLS/dab.cpp:69->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 87 'icmp' 'icmp_ln69' <Predicate = true> <Delay = 3.23> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 3.23> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 88 [1/1] (0.96ns)   --->   "%select_ln69 = select i1 %icmp_ln69, i49 120946279055360, i49 %trunc_ln69" [src/HLS/dab.cpp:69->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 88 'select' 'select_ln69' <Predicate = true> <Delay = 0.96> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 89 [1/1] (0.00ns)   --->   "%store_ln69 = store i49 %select_ln69, i49 %solver_xL" [src/HLS/dab.cpp:69->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 89 'store' 'store_ln69' <Predicate = true> <Delay = 0.00>
+
+State 15 <SV = 14> <Delay = 4.11>
+ST_15 : Operation 90 [1/1] (0.00ns)   --->   "%shl_ln3 = bitconcatenate i50 @_ssdm_op_BitConcatenate.i50.i49.i1, i49 %select_ln69, i1 0" [src/HLS/dab.cpp:74->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 90 'bitconcatenate' 'shl_ln3' <Predicate = (!solver_state_load)> <Delay = 0.00>
+ST_15 : Operation 91 [1/1] (3.15ns)   --->   "%sub_ln74 = sub i50 0, i50 %shl_ln3" [src/HLS/dab.cpp:74->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 91 'sub' 'sub_ln74' <Predicate = (!solver_state_load)> <Delay = 3.15> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.15> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 92 [1/1] (0.95ns)   --->   "%select_ln74 = select i1 %s1_read, i50 %shl_ln3, i50 %sub_ln74" [src/HLS/dab.cpp:74->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 92 'select' 'select_ln74' <Predicate = (!solver_state_load)> <Delay = 0.95> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_15 : Operation 93 [1/1] (0.00ns)   --->   "%store_ln74 = store i50 %select_ln74, i50 %solver_iJ_0" [src/HLS/dab.cpp:74->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 93 'store' 'store_ln74' <Predicate = (!solver_state_load)> <Delay = 0.00>
+ST_15 : Operation 94 [1/1] (0.95ns)   --->   "%select_ln75 = select i1 %s2_read, i50 %shl_ln3, i50 %sub_ln74" [src/HLS/dab.cpp:75->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 94 'select' 'select_ln75' <Predicate = (!solver_state_load)> <Delay = 0.95> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_15 : Operation 95 [1/1] (0.00ns)   --->   "%store_ln75 = store i50 %select_ln75, i50 %solver_iJ_1" [src/HLS/dab.cpp:75->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 95 'store' 'store_ln75' <Predicate = (!solver_state_load)> <Delay = 0.00>
+ST_15 : Operation 96 [1/1] (1.58ns)   --->   "%br_ln98 = br void %_ZN9DabSolver13go_next_stateEv.exit" [src/HLS/dab.cpp:98->src/HLS/dab.cpp:107]   --->   Operation 96 'br' 'br_ln98' <Predicate = (!solver_state_load)> <Delay = 1.58>
+ST_15 : Operation 97 [1/1] (0.00ns)   --->   "%solver_xL_loc_0 = phi i49 %solver_xL_load, void %if.else.i, i49 %select_ln69, void %if.then.i_ifconv" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 97 'phi' 'solver_xL_loc_0' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 98 [1/1] (0.00ns)   --->   "%solver_xC1_loc_0 = phi i64 %trunc_ln, void %if.else.i, i64 %solver_xC1_load, void %if.then.i_ifconv" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 98 'phi' 'solver_xC1_loc_0' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 99 [1/1] (0.00ns)   --->   "%solver_xC2_loc_0 = phi i64 %trunc_ln1, void %if.else.i, i64 %solver_xC2_load, void %if.then.i_ifconv" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 99 'phi' 'solver_xC2_loc_0' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 100 [1/1] (0.00ns)   --->   "%storemerge = phi i1 0, void %if.else.i, i1 1, void %if.then.i_ifconv"   --->   Operation 100 'phi' 'storemerge' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 101 [1/1] (0.00ns)   --->   "%solver_xL_loc_0_cast = sext i49 %solver_xL_loc_0" [src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107]   --->   Operation 101 'sext' 'solver_xL_loc_0_cast' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 102 [1/1] (0.00ns)   --->   "%store_ln0 = store i1 %storemerge, i1 %solver_state"   --->   Operation 102 'store' 'store_ln0' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 103 [1/1] (0.00ns)   --->   "%write_ln108 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %out_xL, i64 %solver_xL_loc_0_cast" [src/HLS/dab.cpp:108]   --->   Operation 103 'write' 'write_ln108' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 104 [1/1] (0.00ns)   --->   "%write_ln109 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %out_xC1, i64 %solver_xC1_loc_0" [src/HLS/dab.cpp:109]   --->   Operation 104 'write' 'write_ln109' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 105 [1/1] (0.00ns)   --->   "%write_ln110 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %out_xC2, i64 %solver_xC2_loc_0" [src/HLS/dab.cpp:110]   --->   Operation 105 'write' 'write_ln110' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 106 [1/1] (0.00ns)   --->   "%ret_ln111 = ret" [src/HLS/dab.cpp:111]   --->   Operation 106 'ret' 'ret_ln111' <Predicate = true> <Delay = 0.00>
+
+State 16 <SV = 1> <Delay = 6.97>
+ST_16 : Operation 107 [1/1] (0.00ns)   --->   "%sext_ln83_1 = sext i65 %sub_ln83" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 107 'sext' 'sext_ln83_1' <Predicate = true> <Delay = 0.00>
+ST_16 : [1/1] (1.58ns)   --->   Input mux for Operation 108 '%mul_ln83 = mul i111 %sext_ln83_1, i111 109951162777600'
+ST_16 : Operation 108 [5/5] (5.39ns)   --->   "%mul_ln83 = mul i111 %sext_ln83_1, i111 109951162777600" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 108 'mul' 'mul_ln83' <Predicate = true> <Delay = 5.39> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 109 [1/1] (0.00ns)   --->   "%sext_ln84_1 = sext i65 %sub_ln84" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 109 'sext' 'sext_ln84_1' <Predicate = true> <Delay = 0.00>
+ST_16 : [1/1] (1.58ns)   --->   Input mux for Operation 110 '%mul_ln84 = mul i111 %sext_ln84_1, i111 109951162777600'
+ST_16 : Operation 110 [5/5] (5.39ns)   --->   "%mul_ln84 = mul i111 %sext_ln84_1, i111 109951162777600" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 110 'mul' 'mul_ln84' <Predicate = true> <Delay = 5.39> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 2> <Delay = 6.97>
+ST_17 : Operation 111 [4/5] (6.97ns)   --->   "%mul_ln83 = mul i111 %sext_ln83_1, i111 109951162777600" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 111 'mul' 'mul_ln83' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 112 [4/5] (6.97ns)   --->   "%mul_ln84 = mul i111 %sext_ln84_1, i111 109951162777600" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 112 'mul' 'mul_ln84' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 3> <Delay = 6.97>
+ST_18 : Operation 113 [3/5] (6.97ns)   --->   "%mul_ln83 = mul i111 %sext_ln83_1, i111 109951162777600" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 113 'mul' 'mul_ln83' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 114 [3/5] (6.97ns)   --->   "%mul_ln84 = mul i111 %sext_ln84_1, i111 109951162777600" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 114 'mul' 'mul_ln84' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 4> <Delay = 6.97>
+ST_19 : Operation 115 [2/5] (6.97ns)   --->   "%mul_ln83 = mul i111 %sext_ln83_1, i111 109951162777600" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 115 'mul' 'mul_ln83' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 116 [2/5] (6.97ns)   --->   "%mul_ln84 = mul i111 %sext_ln84_1, i111 109951162777600" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 116 'mul' 'mul_ln84' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 5> <Delay = 6.97>
+ST_20 : Operation 117 [1/5] (6.97ns)   --->   "%mul_ln83 = mul i111 %sext_ln83_1, i111 109951162777600" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 117 'mul' 'mul_ln83' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 118 [1/5] (6.97ns)   --->   "%mul_ln84 = mul i111 %sext_ln84_1, i111 109951162777600" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 118 'mul' 'mul_ln84' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 6> <Delay = 4.86>
+ST_21 : Operation 119 [1/1] (0.00ns)   --->   "%solver_iJ_0_load = load i50 %solver_iJ_0" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 119 'load' 'solver_iJ_0_load' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 120 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i90 @_ssdm_op_BitConcatenate.i90.i50.i40, i50 %solver_iJ_0_load, i40 0" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 120 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 121 [1/1] (0.00ns)   --->   "%sext_ln83_2 = sext i90 %shl_ln" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 121 'sext' 'sext_ln83_2' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 122 [1/1] (4.86ns)   --->   "%add_ln83 = add i111 %sext_ln83_2, i111 %mul_ln83" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 122 'add' 'add_ln83' <Predicate = true> <Delay = 4.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 4.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 123 [1/1] (0.00ns)   --->   "%solver_iJ_1_load = load i50 %solver_iJ_1" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 123 'load' 'solver_iJ_1_load' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 124 [1/1] (0.00ns)   --->   "%shl_ln1 = bitconcatenate i90 @_ssdm_op_BitConcatenate.i90.i50.i40, i50 %solver_iJ_1_load, i40 0" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 124 'bitconcatenate' 'shl_ln1' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 125 [1/1] (0.00ns)   --->   "%sext_ln84_2 = sext i90 %shl_ln1" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 125 'sext' 'sext_ln84_2' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 126 [1/1] (4.86ns)   --->   "%add_ln84 = add i111 %sext_ln84_2, i111 %mul_ln84" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 126 'add' 'add_ln84' <Predicate = true> <Delay = 4.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 4.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 7> <Delay = 6.97>
+ST_22 : Operation 127 [1/1] (0.00ns)   --->   "%sext_ln83_3 = sext i111 %add_ln83" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 127 'sext' 'sext_ln83_3' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 128 [5/5] (6.97ns)   --->   "%mul_ln83_1 = mul i175 %sext_ln83_3, i175 12089130347397120000" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 128 'mul' 'mul_ln83_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 129 [1/1] (0.00ns)   --->   "%sext_ln84_3 = sext i111 %add_ln84" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 129 'sext' 'sext_ln84_3' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 130 [5/5] (6.97ns)   --->   "%mul_ln84_1 = mul i177 %sext_ln84_3, i177 48356521389588480000" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 130 'mul' 'mul_ln84_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 8> <Delay = 6.97>
+ST_23 : Operation 131 [4/5] (6.97ns)   --->   "%mul_ln83_1 = mul i175 %sext_ln83_3, i175 12089130347397120000" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 131 'mul' 'mul_ln83_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 132 [4/5] (6.97ns)   --->   "%mul_ln84_1 = mul i177 %sext_ln84_3, i177 48356521389588480000" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 132 'mul' 'mul_ln84_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 9> <Delay = 6.97>
+ST_24 : Operation 133 [3/5] (6.97ns)   --->   "%mul_ln83_1 = mul i175 %sext_ln83_3, i175 12089130347397120000" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 133 'mul' 'mul_ln83_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 134 [3/5] (6.97ns)   --->   "%mul_ln84_1 = mul i177 %sext_ln84_3, i177 48356521389588480000" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 134 'mul' 'mul_ln84_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 10> <Delay = 6.97>
+ST_25 : Operation 135 [2/5] (6.97ns)   --->   "%mul_ln83_1 = mul i175 %sext_ln83_3, i175 12089130347397120000" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 135 'mul' 'mul_ln83_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 136 [2/5] (6.97ns)   --->   "%mul_ln84_1 = mul i177 %sext_ln84_3, i177 48356521389588480000" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 136 'mul' 'mul_ln84_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 11> <Delay = 6.97>
+ST_26 : Operation 137 [1/5] (6.97ns)   --->   "%mul_ln83_1 = mul i175 %sext_ln83_3, i175 12089130347397120000" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 137 'mul' 'mul_ln83_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 138 [1/5] (6.97ns)   --->   "%mul_ln84_1 = mul i177 %sext_ln84_3, i177 48356521389588480000" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 138 'mul' 'mul_ln84_1' <Predicate = true> <Delay = 6.97> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 12> <Delay = 6.99>
+ST_27 : Operation 139 [1/1] (0.00ns)   --->   "%shl_ln83_1 = bitconcatenate i184 @_ssdm_op_BitConcatenate.i184.i64.i120, i64 %solver_xC1_load, i120 0" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 139 'bitconcatenate' 'shl_ln83_1' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 140 [1/1] (0.00ns)   --->   "%sext_ln83_4 = sext i175 %mul_ln83_1" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 140 'sext' 'sext_ln83_4' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 141 [1/1] (6.99ns)   --->   "%add_ln83_1 = add i184 %shl_ln83_1, i184 %sext_ln83_4" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 141 'add' 'add_ln83_1' <Predicate = true> <Delay = 6.99> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 6.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 142 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i64 @_ssdm_op_PartSelect.i64.i184.i32.i32, i184 %add_ln83_1, i32 120, i32 183" [src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 142 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 143 [1/1] (0.00ns)   --->   "%trunc_ln84_1 = partselect i63 @_ssdm_op_PartSelect.i63.i184.i32.i32, i184 %add_ln83_1, i32 120, i32 182" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 143 'partselect' 'trunc_ln84_1' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 144 [1/1] (0.00ns)   --->   "%shl_ln84_1 = bitconcatenate i184 @_ssdm_op_BitConcatenate.i184.i64.i120, i64 %solver_xC2_load, i120 0" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 144 'bitconcatenate' 'shl_ln84_1' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 145 [1/1] (0.00ns)   --->   "%sext_ln84_4 = sext i177 %mul_ln84_1" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 145 'sext' 'sext_ln84_4' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 146 [1/1] (6.99ns)   --->   "%add_ln84_1 = add i184 %shl_ln84_1, i184 %sext_ln84_4" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 146 'add' 'add_ln84_1' <Predicate = true> <Delay = 6.99> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 6.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 147 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i64 @_ssdm_op_PartSelect.i64.i184.i32.i32, i184 %add_ln84_1, i32 120, i32 183" [src/HLS/dab.cpp:84->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 147 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 148 [1/1] (0.00ns)   --->   "%trunc_ln2 = partselect i63 @_ssdm_op_PartSelect.i63.i184.i32.i32, i184 %add_ln84_1, i32 120, i32 182" [src/HLS/dab.cpp:85->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 148 'partselect' 'trunc_ln2' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 149 [1/1] (0.00ns)   --->   "%store_ln85 = store i64 %trunc_ln, i64 %solver_xC1" [src/HLS/dab.cpp:85->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 149 'store' 'store_ln85' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 150 [1/1] (0.00ns)   --->   "%store_ln86 = store i64 %trunc_ln1, i64 %solver_xC2" [src/HLS/dab.cpp:86->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 150 'store' 'store_ln86' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 151 [1/1] (0.00ns)   --->   "%store_ln89 = store i63 %trunc_ln84_1, i63 %solver_vE_0" [src/HLS/dab.cpp:89->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 151 'store' 'store_ln89' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 152 [1/1] (0.00ns)   --->   "%store_ln90 = store i63 %trunc_ln2, i63 %solver_vE_1" [src/HLS/dab.cpp:90->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107]   --->   Operation 152 'store' 'store_ln90' <Predicate = true> <Delay = 0.00>
+
+State 28 <SV = 13> <Delay = 1.58>
+ST_28 : Operation 153 [1/1] (1.58ns)   --->   "%br_ln0 = br void %_ZN9DabSolver13go_next_stateEv.exit"   --->   Operation 153 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.663ns
+The critical path consists of the following:
+	'load' operation ('solver_xL_load', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) on static variable 'solver_xL' [30]  (0.000 ns)
+	'mul' operation ('mul_ln64', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [46]  (5.663 ns)
+
+ <State 2>: 6.322ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln61', src/HLS/dab.cpp:61->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [40]  (3.494 ns)
+	'select' operation ('select_ln58_1', src/HLS/dab.cpp:58->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [43]  (1.414 ns)
+	'select' operation ('select_ln58_2', src/HLS/dab.cpp:58->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [44]  (0.000 ns)
+	blocking operation 1.41375 ns on control path)
+
+ <State 3>: 5.663ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln64', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [46]  (5.663 ns)
+
+ <State 4>: 5.663ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln64', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [46]  (5.663 ns)
+
+ <State 5>: 5.663ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln64', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [46]  (5.663 ns)
+
+ <State 6>: 4.665ns
+The critical path consists of the following:
+	'add' operation ('add_ln64', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [50]  (4.665 ns)
+
+ <State 7>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln64_1', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [52]  (6.978 ns)
+
+ <State 8>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln64_1', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [52]  (6.978 ns)
+
+ <State 9>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln64_1', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [52]  (6.978 ns)
+
+ <State 10>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln64_1', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [52]  (6.978 ns)
+
+ <State 11>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln64_1', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [52]  (6.978 ns)
+
+ <State 12>: 6.642ns
+The critical path consists of the following:
+	'add' operation ('add_ln64_1', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [56]  (6.642 ns)
+
+ <State 13>: 3.236ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln66', src/HLS/dab.cpp:66->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [58]  (3.236 ns)
+
+ <State 14>: 5.150ns
+The critical path consists of the following:
+	'select' operation ('select_ln66', src/HLS/dab.cpp:66->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [59]  (0.951 ns)
+	'icmp' operation ('icmp_ln69', src/HLS/dab.cpp:69->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [61]  (3.236 ns)
+	'select' operation ('select_ln69', src/HLS/dab.cpp:69->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [62]  (0.962 ns)
+
+ <State 15>: 4.119ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln74', src/HLS/dab.cpp:74->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [65]  (3.159 ns)
+	'select' operation ('select_ln74', src/HLS/dab.cpp:74->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [66]  (0.960 ns)
+
+ <State 16>: 6.978ns
+The critical path consists of the following:
+	multiplexor before operation 'mul' with delay (1.588 ns)
+'mul' operation ('mul_ln83', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [75]  (5.390 ns)
+
+ <State 17>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln83', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [75]  (6.978 ns)
+
+ <State 18>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln83', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [75]  (6.978 ns)
+
+ <State 19>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln83', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [75]  (6.978 ns)
+
+ <State 20>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln83', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [75]  (6.978 ns)
+
+ <State 21>: 4.866ns
+The critical path consists of the following:
+	'load' operation ('solver_iJ_0_load', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) on static variable 'solver_iJ_0' [76]  (0.000 ns)
+	'add' operation ('add_ln83', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [79]  (4.866 ns)
+
+ <State 22>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln83_1', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [81]  (6.978 ns)
+
+ <State 23>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln83_1', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [81]  (6.978 ns)
+
+ <State 24>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln83_1', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [81]  (6.978 ns)
+
+ <State 25>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln83_1', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [81]  (6.978 ns)
+
+ <State 26>: 6.978ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln83_1', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [81]  (6.978 ns)
+
+ <State 27>: 6.994ns
+The critical path consists of the following:
+	'add' operation ('add_ln83_1', src/HLS/dab.cpp:83->src/HLS/dab.cpp:99->src/HLS/dab.cpp:107) [84]  (6.994 ns)
+
+ <State 28>: 1.588ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('solver_xL_loc_0', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) with incoming values : ('solver_xL_load', src/HLS/dab.cpp:64->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) ('select_ln69', src/HLS/dab.cpp:69->src/HLS/dab.cpp:97->src/HLS/dab.cpp:107) [108]  (1.588 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

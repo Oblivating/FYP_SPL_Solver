@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "dab_top",
+        "file": "dab.cpp",
+        "fileloc": "104",
+        "instructions": "101",
+        "total_instructions": "101",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "8"
+        },
+        "stores": {
+            "G": "8"
+        }
+    }
+}

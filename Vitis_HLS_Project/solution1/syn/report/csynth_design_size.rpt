@@ -1,0 +1,37 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Instructions per Function for each Compilation Phase
++-------------------+-------------+--------------+---------------+----------------------+---------------+
+| Function          | Location    | Compile/Link | Unroll/Inline | Performance/Pipeline | Optimizations |
++-------------------+-------------+--------------+---------------+----------------------+---------------+
+| + dab_top         | dab.cpp:104 | 7,468        | 775           | 140                  | 149           |
+|    DabSolver      | dab.cpp:37  |   493        |               |                      |               |
+|    set_pwm        | dab.cpp:40  |    22        |   5           |                      |               |
+|  + go_next_state  | dab.cpp:95  | 6,904        | 723           |                      |               |
+|     update_state1 | dab.cpp:51  | 4,552        | 477           |                      |               |
+|     update_state2 | dab.cpp:81  | 2,343        | 238           |                      |               |
+|    getxL          | dab.cpp:42  |     4        |   3           |                      |               |
+|    getxC1         | dab.cpp:43  |     4        |   3           |                      |               |
+|    getxC2         | dab.cpp:44  |     4        |   3           |                      |               |
++-------------------+-------------+--------------+---------------+----------------------+---------------+
+
+* Description of Compilation Phases
++----------------------+------------------------------------------------------------+
+| Compilation Phase    | Description                                                |
++----------------------+------------------------------------------------------------+
+| Compile/Link         | All functions are compiled and linked into a single design |
+| Unroll/Inline        | After user unroll and inline pragmas are applied           |
+| Performance/Pipeline | After performance and pipeline pragmas are applied         |
+| Optimizations        | After high level synthesis optimizations                   |
++----------------------+------------------------------------------------------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

@@ -1,0 +1,145 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: '/home/dvd/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                   Line: 186, Column: 0 }
+Function:        _ZNSt5arrayI8ap_fixedILi64ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EELm2EEixEm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::__array_traits<ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>, 2ul>::_S_ref(ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [2], unsigned long)'
+    DebugLoc:        { File: '/home/dvd/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                       Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::array<ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>, 2ul>::operator[](unsigned long)'
+    DebugLoc:        { File: '/home/dvd/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/HLS/dab.cpp, Line: 51, Column: 0 }
+Function:        _ZN9DabSolver13update_state1Ev
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::array<ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>, 2ul>::operator[](unsigned long)'
+    DebugLoc:        { File: '/home/dvd/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                       Line: 186, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'DabSolver::update_state1()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 51, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/HLS/dab.cpp, Line: 81, Column: 0 }
+Function:        _ZN9DabSolver13update_state2Ev
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::array<ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>, 2ul>::operator[](unsigned long)'
+    DebugLoc:        { File: '/home/dvd/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                       Line: 186, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'DabSolver::update_state2()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 81, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/HLS/dab.cpp, Line: 95, Column: 0 }
+Function:        _ZN9DabSolver13go_next_stateEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'DabSolver::update_state1()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 51, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'DabSolver::go_next_state()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 95, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/HLS/dab.cpp, Line: 95, Column: 0 }
+Function:        _ZN9DabSolver13go_next_stateEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'DabSolver::update_state2()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 81, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'DabSolver::go_next_state()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 95, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+Function:        _Z7dab_top7ap_uintILi1EES0_R8ap_fixedILi64ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'DabSolver::set_pwm(ap_uint<1>, ap_uint<1>)'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'dab_top(ap_uint<1>, ap_uint<1>, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+Function:        _Z7dab_top7ap_uintILi1EES0_R8ap_fixedILi64ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'DabSolver::go_next_state()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 95, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'dab_top(ap_uint<1>, ap_uint<1>, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+Function:        _Z7dab_top7ap_uintILi1EES0_R8ap_fixedILi64ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'DabSolver::getxL()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 42, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'dab_top(ap_uint<1>, ap_uint<1>, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+Function:        _Z7dab_top7ap_uintILi1EES0_R8ap_fixedILi64ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'DabSolver::getxC1()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 43, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'dab_top(ap_uint<1>, ap_uint<1>, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+Function:        _Z7dab_top7ap_uintILi1EES0_R8ap_fixedILi64ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'DabSolver::getxC2()'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'dab_top(ap_uint<1>, ap_uint<1>, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<64, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: src/HLS/dab.cpp, Line: 104, Column: 0 }
+  - String:          ''''
+...

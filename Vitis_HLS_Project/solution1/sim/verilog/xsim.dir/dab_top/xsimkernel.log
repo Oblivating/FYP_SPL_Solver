@@ -1,0 +1,7 @@
+Running: xsim.dir/dab_top/xsimk -simmode gui -wdb dab_top.wdb -simrunnum 0 -socket 59351
+Design successfully loaded
+Design Loading Memory Usage: 25024 KB (Peak: 25024 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 120164 KB (Peak: 164292 KB)
+Simulation CPU Usage: 10040 ms

@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# xsim v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Jun 23 11:41:10 2024
+# Process ID: 34827
+# Current directory: /home/dvd/dab_hls/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/dab_top/xsim_script.tcl}
+# Log file: /home/dvd/dab_hls/solution1/sim/verilog/xsim.log
+# Journal file: /home/dvd/dab_hls/solution1/sim/verilog/xsim.jou
+# Running On: dvd, OS: Linux, CPU Frequency: 2592.000 MHz, CPU Physical cores: 4, Host memory: 16723 MB
+#-----------------------------------------------------------
+source xsim.dir/dab_top/xsim_script.tcl
+open_wave_config dab_top_dataflow_ana.wcfg
+source dab_top.tcl
